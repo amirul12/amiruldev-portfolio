@@ -15,8 +15,8 @@ const projectCards = document.querySelectorAll('.project-card');
 const themeToggle = document.getElementById('themeToggle');
 
 // === Dark/Light Mode Toggle ===
-// Check for saved theme preference or default to dark mode
-const currentTheme = localStorage.getItem('theme') || 'dark';
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', currentTheme);
 
 themeToggle.addEventListener('click', () => {
